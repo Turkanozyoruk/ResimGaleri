@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>RESÝM GALERÝSÝ</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <h1 class="text-center my-3">Resim Galerisi</h1>
+        </div>
+        <div class="row">
+            <h2>HAYVANLAR</h2>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card">
+                    <img src="https://bilimvegelecek.com.tr/wp-content/uploads/2018/03/atlar.jpg" class="card-img-top" alt="Hayvanlar" data-bs-toggle="modal" data-bs-target="#detay">
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card">
+                    <img src="https://static.birgun.net/resim/haber-detay-resim/2015/09/09/hayvanlar-ahlaksiz-degil-69763-5.jpg" class="card-img-top" alt="Hayvanlar" data-bs-toggle="modal" data-bs-target="#detay">
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card">
+                    <img src="https://image.milimaj.com/i/milliyet/75/869x477/5f184d1355428012acd17835.jpg" class="card-img-top" alt="Hayvanlar" data-bs-toggle="modal" data-bs-target="#detay">
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card">
+                    <img src="https://hthayat.haberturk.com/im/2017/04/18/ver1644825732/1049403_1920x1080.jpg" class="card-img-top" alt="Hayvanlar" data-bs-toggle="modal" data-bs-target="#detay">
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card">
+                    <img src="https://image.cnnturk.com/i/cnnturk/75/740x416/64905bf4ae0a8f1b0045998d.jpg" class="card-img-top" alt="Hayvanlar" data-bs-toggle="modal" data-bs-target="#detay">
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card">
+                    <img src="https://image.hurimg.com/i/hurriyet/75/1200x675/5a5f50830f254414c01387c3.jpg" class="card-img-top" alt="Hayvanlar" data-bs-toggle="modal" data-bs-target="#detay">
+                </div>
+            </div>
+
+            <h2>BÝTKÝLER</h2>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card">
+                    <img src="https://evrimagaci.org/public/content_media/d8a2673a16e93562a01890242e5e17fd.jpg" class="card-img-top" alt="Bitkiler" data-bs-toggle="modal" data-bs-target="#detay">
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card">
+                    <img src="https://www.tarlasera.com/multimedya/28.8.2018-mucizelerle-degil-bilimle-anilan-bitkiler8.jpg" class="card-img-top" alt="Bitkiler" data-bs-toggle="modal" data-bs-target="#detay">
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card">
+                    <img src="https://www.bilimup.com/uploads/galeri/gorsel/image-IgNm.png" class="card-img-top" alt="Bitkiler" data-bs-toggle="modal" data-bs-target="#detay">
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card">
+                    <img src="https://www.matematiksel.org/wp-content/uploads/2023/04/etcil-bitki.jpg" class="card-img-top" alt="Bitkiler" data-bs-toggle="modal" data-bs-target="#detay">
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card">
+                    <img src="https://ciceklerim.org/wp-content/uploads/2020/06/cicekli-bitkiler-1024x512.jpg" class="card-img-top" alt="Bitkiler" data-bs-toggle="modal" data-bs-target="#detay">
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card">
+                    <img src="https://www.tarlasera.com/multimedya/25.8.2017-ecza-dolabinizda-gizlenen-bitkiler10.jpg" class="card-img-top" alt="Bitkiler" data-bs-toggle="modal" data-bs-target="#detay">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="detay" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class=" modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+
+                <div class="modal-body">
+                    <img id="modal-image" class="card-img-top" alt="Alternate Text" />.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.querySelectorAll(".card img").forEach(img => {
+            img.addEventListener("click", () => {
+                let src = img.getAttribute("src");
+                document.getElementById("modal-image").setAttribute("src", src);
+            });
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
